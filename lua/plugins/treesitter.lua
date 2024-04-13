@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- Customize Treesitter
 
@@ -10,7 +10,24 @@ return {
     opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
       "lua",
       "vim",
+      "css",
+      "html",
+      "javascript",
+      "json",
+      "php",
+      "phpdoc",
+      "scss",
       -- add more arguments for adding more treesitter parsers
     })
+
+    opts.auto_install = true
+
+    opts.highlight = {
+      enable = true,
+    }
+
+    opts.indent = {
+      enable = true,
+    }
   end,
 }
