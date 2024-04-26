@@ -43,7 +43,7 @@ return {
         "htmlhint",
         "biome",
         "markdownlint",
-        "pint",
+        -- "pint",
       })
     end,
   },

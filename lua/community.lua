@@ -11,6 +11,9 @@ return {
   -- import/override with your plugins folder
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
+  { import = "astrocommunity.recipes.neovide" },
+  { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
+  -- { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
   {
     "m4xshen/smartcolumn.nvim",
     opts = {
